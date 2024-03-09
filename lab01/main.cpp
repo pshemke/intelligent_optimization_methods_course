@@ -5,14 +5,17 @@
 #include <tuple>
 
 #include "solver.h"
-#include "matplotlib-cpp\matplotlibcpp.h"
 
+#define NANOVG_GLEW
+#include "nanovg\src\nanovg.h"
+#define NANOVG_GL3_IMPLEMENTATION
+#include "nanovg\src\nanovg_gl.h"
 
-namespace plt = matplotlibcpp;
+#define GLFW_INCLUDE_GLEXT
+#include <glfw-3.4\include\GLFW\glfw3.h>
+
 int main() {
 
-    plt::plot({1,3,2,4});
-    plt::show();
 
     
     
