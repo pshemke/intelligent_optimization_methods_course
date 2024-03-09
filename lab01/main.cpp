@@ -4,13 +4,16 @@
 #include <bitset>
 #include <tuple>
 
-int main() {
-    std::string input_path = "";
+#include "solver.h"
+#include "matplotlib-cpp\matplotlibcpp.h"
 
-    std::bitset<100> visited;
-    std::bitset<100> edges[100];
-    int distances[100][100];
-    std::tuple<int,int> nodes[100];
+
+namespace plt = matplotlibcpp;
+int main() {
+
+    plt::plot({1,3,2,4});
+    plt::show();
+
     
     
 
